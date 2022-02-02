@@ -9,6 +9,6 @@ venv.bak/
 # Mac
 .DS_Store
 # Audio
-tracks/
+
 *.m4a
 *.jpg
