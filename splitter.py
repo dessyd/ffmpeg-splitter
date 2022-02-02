@@ -27,7 +27,7 @@ for i in range(len(songs) - 1):
   cmd = (songs[i][0], songs[i+1][0], songs[i][1])
   cmds.append(cmd)
 
-  run = 'ffmpeg -i \"%s\" -acodec %s -ss %s -to %s ' % (cdfile, 'copy' if do_copy else 'libfdk_aac -qscale:a 2', cmd[0], cmd[1])
+  run = 'ffmpeg -y -i \"%s\" -acodec %s -ss %s -to %s ' % (cdfile, 'copy' if do_copy else 'libfdk_aac -qscale:a 2', cmd[0], cmd[1])
   run += '%s -metadata title="%s" -metadata track="%d/%d" -metadata publisher="%s" ' % (metastring, cmd[2], i+1, len(songs) - 1, meta_src)
   run += '"%s/%02d %s.m4a"' % (outdir, i + 1, cmd[2])
   # print("\tcmd: %s" % run)
