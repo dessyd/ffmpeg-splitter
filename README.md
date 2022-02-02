@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ### To Do 
 
 - [ ] Put config outside of code
-- [ ] Add subsecond timing
+- [x] Add subsecond timing
 - [ ] Add "overwrite tracks"
 - [ ] Remove video track (ffmpeg )
 - [ ] Check qscale parameter
