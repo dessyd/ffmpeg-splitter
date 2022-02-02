@@ -17,8 +17,8 @@ pip install -r requirements.txt
 
 - [ ] Put config outside of code
 - [ ] Add subsecond timing
+- [ ] Add "overwrite tracks"
 - [ ] Remove video track (ffmpeg )
 - [ ] Check qscale parameter
-
 - [ ] Add Illustration
 - [ ] Add Album 1 of 1 tag
